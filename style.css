@@ -22,8 +22,19 @@ h1 {
 }
 
 .rows {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.multi {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .button {
@@ -72,4 +83,22 @@ h1 {
 
 .hide {
     display: none;
+}
+
+.disabled {
+    pointer-events: none; 
+}
+
+.selected {
+    background-color: rgb(0, 255, 21);
+    border: 1px solid #333;
+}
+
+#timerP {
+    color: #3700ff;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 0 0 20px 0;
+    font-size: 50px;
 }
